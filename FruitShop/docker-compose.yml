@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  webapp:
+    image: fruitshop
+    ports:
+      - "5173:5173"
+      - "7189:7189"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5173;http://+:7189
