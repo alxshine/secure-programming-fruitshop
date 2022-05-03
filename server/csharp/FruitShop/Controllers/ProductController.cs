@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FruitShop.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("products")]
 public class ProductController : ControllerBase
 {
     [HttpGet]
