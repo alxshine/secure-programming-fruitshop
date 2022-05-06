@@ -5,7 +5,7 @@ namespace FruitShop.Services;
 public static class ProductService
 {
     private static List<Product> Products { get; }
-    private static int nextId = 3;
+    private static int _nextId = 3;
 
     static ProductService()
     {
@@ -21,7 +21,7 @@ public static class ProductService
 
     public static void Add(Product product)
     {
-        product.Id = nextId++;
+        product.Id = _nextId++;
         Products.Add(product);
     }
 
