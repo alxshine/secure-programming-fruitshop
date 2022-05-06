@@ -2,10 +2,11 @@ version: '3.4'
 
 services:
   webapp:
-    image: fruitshop
+    build:
+      context: ..
+      dockerfile: FruitShop/Dockerfile
     ports:
-      - "1337:1337"
-      - "1337:1338"
+      - "7189:7189"
+      - "5173:5173"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:1337
