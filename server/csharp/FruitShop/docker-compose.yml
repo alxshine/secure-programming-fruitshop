@@ -10,3 +10,4 @@ services:
       - "5173:5173"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:7189
